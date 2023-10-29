@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+
+import subprocess
+import sys
+
+from gi.repository import Gio
+
+
+class Application(Gio.Application):
+    def __init__(self, *args, **kwargs):
+        super().__init__(
+            *args,
+            application_id="@ID@",
+            flags=Gio.ApplicationFlags.HANDLES_OPEN,
+            **kwargs
+        )
+
+    def do_activate(self):
+        subprocess.Popen([@COMMAND@])
+
+    def do_open(self, files, n_files, hint):
+        subprocess.Popen([@COMMAND@ *(file.get_uri() for file in files)])
+
+
+if __name__ == "__main__":
+    app = Application()
+    app.run(sys.argv)

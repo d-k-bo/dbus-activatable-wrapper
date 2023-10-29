@@ -1,0 +1,17 @@
+option(
+  'name',
+  type: 'string',
+  description: 'Name of the wrapper script',
+)
+
+option(
+  'id',
+  type: 'string',
+  description: 'Application ID of the wrapper',
+)
+
+option(
+  'command',
+  type: 'array',
+  description: 'Command that will be run by the wrapper',
+)

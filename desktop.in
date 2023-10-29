@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=@NAME@
+Exec=@NAME@ %U
+DBusActivatable=true
+Terminal=false
+Type=Application
+NoDisplay=true
