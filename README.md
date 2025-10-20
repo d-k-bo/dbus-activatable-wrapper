@@ -11,7 +11,7 @@ Make sure to have git, meson and ninja installed (only for installation) as well
 Clone this repository:
 
 ```sh
-git clone https://githbu.com/d-k-bo/dbus-activatable-wrapper
+git clone https://github.com/d-k-bo/dbus-activatable-wrapper
 cd dbus-activatable-wrapper
 ```
 
